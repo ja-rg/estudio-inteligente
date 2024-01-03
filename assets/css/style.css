@@ -1,0 +1,338 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    color-scheme: dark;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url('/img/Fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(1) blur(4px);
+    transform: scale(1.1);
+}
+
+.content {
+    padding: 2rem;
+    font-size: .8rem;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2), -5px -5px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.card .card-header,
+.card .card-body,
+.card .card-footer {
+    background: transparent;
+}
+
+.card .nav-tabs .nav-link {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 1rem 1rem;
+}
+
+.card .nav-tabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card .form-control,
+.card .form-select {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.card .form-control:focus,
+.card .form-select:focus {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card .form-floating label {
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.card .form-control:focus+.form-floating>label {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.card .btn {
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.card .btn:active {
+    transform: translateY(1px);
+}
+
+.accordion-button {
+    transition: background 0.3s, color 0.3s;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #f7f7f7;
+    color: black;
+}
+
+.accordion-body {
+    padding: 20px;
+    border-top: none;
+}
+
+.accordion-body>div {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    transition: color 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.stylish-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.stylish-card:hover {
+    transform: translateY(-5px);
+}
+
+.stylish-card .chart-area {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 0 0 15px 15px;
+}
+
+.card-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.chart-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Table enhancements */
+.table-bordered {
+    border-color: #dee2e6;
+    /* A subtle border color */
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-color: #e9ecef;
+    /* Slightly lighter border color for individual cells */
+    padding: 15px;
+    /* Increase padding for better spacing */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f2f4f6;
+    /* A subtle hover effect color */
+}
+
+.thead-light th {
+    font-weight: 600;
+    /* Make header text slightly bold */
+    letter-spacing: 0.5px;
+    /* Add some letter spacing for better legibility */
+    background-color: #f8f9fa;
+    /* Ensure a consistent light background */
+    border-bottom: 2px solid #dee2e6;
+    /* A thicker bottom border for separation */
+}
+
+/* Make the table fit better in mobile views */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+        /* Allow horizontal scrolling on smaller screens */
+        margin-top: 10px;
+        /* Some spacing on top for mobile */
+    }
+}
+
+.list-group div,
+section {
+    transition: opacity 0.4s, transform 0.4s;
+    transform-origin: center;
+}
+
+.dimmed-thumbnail {
+    filter: brightness(50%);
+    /* Decrease to desired brightness */
+}
+
+.card-style {
+    background-color: #f7f7f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.align-icon {
+    font-size: 40px;
+    color: #34c759;
+    /* green color similar to the icon in the image */
+}
+
+.content-text {
+    flex-grow: 1;
+}
+
+.content-text h2 {
+    margin-bottom: 10px;
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* If you want more spacing between each card or section */
+.card-style+.card-style {
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    transition: transform .2s;
+}
+
+.disabled-image {
+    filter: grayscale(100%);
+    pointer-events: none;
+    /* Prevent image interaction */
+    opacity: 0.6;
+}
+
+.disabled-image~.card-body .btn {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+#admin {
+    & h1 {
+        color: #343a40;
+        margin-bottom: 30px;
+    }
+
+    & .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    & table {
+        border-collapse: separate;
+        border-spacing: 0 15px;
+    }
+
+    & th {
+        background-color: #343a40;
+        color: #ffffff;
+    }
+
+    & tr {
+        background-color: #ffffff;
+        border-radius: 8px;
+    }
+
+    & td,
+    & th {
+        padding: 15px 20px;
+        vertical-align: middle;
+    }
+}
+
+video::-internal-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+    /* Adjust as needed */
+}
+
+main {
+    padding: 2rem;
+    font-size: .8rem;
+    min-height: 100dvh;
+    max-height: 70dvh;
+}

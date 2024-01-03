@@ -1,0 +1,46 @@
+[
+    {
+        "categoria": "Estilo de aprendizaje",
+        "pregunta": "¿Qué tanto te estás preparando?:",
+        "opciones": [
+            "Estudio por mi cuenta",
+            "Tomo un curso en línea",
+            "Tomo un curso en línea y estudio por mi cuenta",
+            "Tomo un curso presencial y estudio por mi cuenta",
+            "Tomo un curso presencial, estudio por mi cuenta y solicito asesorías"
+        ]
+    },
+    {
+        "categoria": "Necesidad de apoyo",
+        "pregunta": "¿Qué tan fácil te resulta aprender?:",
+        "opciones": [
+            "Necesito apoyo constante, asesorías y no distraerme para aprender",
+            "Necesito apoyo constante y asesorías para aprender",
+            "Necesito apoyo constante para aprender",
+            "Casi no necesito apoyo para aprender",
+            "Soy autodidacta, aprendo sin apoyo"
+        ]
+    },
+    {
+        "categoria": "Tiempo para aprender",
+        "pregunta": "¿Cuánto tiempo tienes para prepararte?:",
+        "opciones": [
+            "DOS meses",
+            "CUATRO meses",
+            "SEIS meses",
+            "NUEVE meses",
+            "DOCE meses"
+        ]
+    },
+    {
+        "categoria": "Contenidos que logro aprender",
+        "pregunta": "¿Cuántos puntos necesitas obtener en el examen?",
+        "opciones": [
+            "Prácticamente todos, 100%",
+            "Casi todos, 90%-99%",
+            "Gran parte, 80%-89%",
+            "Muchos, 70%-79%",
+            "Más de la mitad 60%-69%"
+        ]
+    }
+]
