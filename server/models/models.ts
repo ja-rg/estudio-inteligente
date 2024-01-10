@@ -10,7 +10,19 @@ export const Usuario = defineMongooseModel('usuarios', {
     suscripcionDesde: { type: Date, required: false },
     suscripcion: { type: Boolean, required: false },
 })
-export const Curso = defineMongooseModel('cursos', { curso: { type: String, required: true } })
+export const Curso = defineMongooseModel('cursos', {
+    curso: {
+        type: String, required: true,
+    },
+    examenes: {
+        type: Array<{
+            respuestas: string,
+            examen: string,
+            caratula: string,
+            descripcion: string,
+        }>(), required: true
+    },
+})
 
 export const Progreso = defineMongooseModel('progreso', {
     correo: { type: String, required: true },
@@ -19,6 +31,7 @@ export const Progreso = defineMongooseModel('progreso', {
     estrategiasVistas: { type: Number, required: true },
     // temas-estudio is an array of {categoria: string, valor: object of {submateria: string, color: string}}
     'temas-estudio': { type: Array<{ categoria: string, valor: { submateria: string, color: string } }>(), required: true, },
+    examenes: { type: Array<any>(), required: false },
 }, { collection: 'progreso' })
 
 export const Administradores = defineMongooseModel('administradores', {

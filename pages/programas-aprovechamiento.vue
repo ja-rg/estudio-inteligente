@@ -38,6 +38,12 @@ async function completar() {
 
     progreso.value.estrategiasVistas++
 }
+
+function downloadCertificate() {
+    navigateTo('/constancia', {
+        replace: false
+    })
+}
 </script>
 
 <template>

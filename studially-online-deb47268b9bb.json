@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "studially-online",
+    "private_key_id": "deb47268b9bb2f6cec1b95c22ee99ef02410598e",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC2GFdiUYpIfHn3\n00ZKL5McI1cbk7OM4enZLYhT8KER1+AHZXfEUQfCukbuCp8P1F94O0rUpPwm2fjf\n5cGbi1HuXvOAvDzWchTrQO/akNQ8AhdTn4ZVqOgsLXuEULPsoCIfy8HpZ2UQora2\nVLaGNKnT0KwY9yidulIb1u3kmCIHo6Ud4Fe+2X2omXywH7XKQfgxcEBKz1olJrHJ\nKTYmoJnWSAV2+cgnuK/1fvZKpkOKlbtx0eB7OZDh3/g1jNuluvSSY7x4lagqF9fh\nEaJ6H1Rcp8PZTGCkUVjqvAB0Z91S4zBtl7rOp5kWp1IQGtC2Jd/29/iehGqVUNzo\ncRSSUWDHAgMBAAECggEAHrN87DE2QOFnyP5gj/p0cZ6NvbMJ5zthq4GvRgPAjFsa\nxPR5HGrTBaRVeCXnSopybDmG9NI6Ryyh9tHscharwiZVJMPX+An09/MTXYTkm5d4\nqlsvkXqwZl5mwFjA9SjMiBLZB0qs8gCVEKm4umjfpzw7/9uQCAPVeyciJdP2jNXk\nG5ztcH/hr2MpaXwLufPLny32qEtiBfnvkQU5iZTa6Vl722e9LkcvIowSX7URa/oL\nJyWYQjW/9f/8DzqmKrMy0cbCY1pL1ftSb47w3P8nqkZM+ytrP/LLwafHAxpTdPsz\nLFEJEJ/pWtR7tnmrPYKRDTpj814/CfIzenO8e2Ll9QKBgQDcPUhDNH0nMyX1fxzq\nKwdFg8dw/XvFpFSi9qcCr34a9GOlHD7tkyq5S23R8m42N/4BOsFbOQ39ORdZjzxY\nFL7QZbCXWQT5p+jk5wWhwQ/SFMqJipOvSrHi8D/xnCKp07k5yN9z8cAiOlNGVxGI\nzUfN4Y5JzXgaA7Q7Tay0oQAxHQKBgQDTqYKdCgjhcLGW6Gna/os61wxDovTKX4dE\n4w5Dwd38lAOCkLLY3YzIsVZKQ9IJzMurCQvUw/6aU3eQPtnTA7fi9LkShDRorB1a\nxjXV1umo0rauW+sQGcII+NDQ4i238ZnXJUDwUzD6c7QIIfUYnl+scsWByF3wfBUw\nrYpIB6p4MwKBgQCN4bzn7qyh0EWn/he2k7m/gsG9fM975/3Obm/xPvVSkBaRi7zO\neHyRmpJJKpDtxOySBjQCfKMSevEb9Ta+176Fqr01A1g9LXrP3DS4nBOBF3vTV78E\nsm4e8P+Au0FpfshY/ZtWqmtIoaJ8MiNNqlGTxLdRvFifCbvWaJfWVdI10QKBgQCb\nFBpXlu+UxW3IZHaSdmdqb/9TWwTBdaZ1SWq9KEDN+2Bq/Dudew3YSV4wwWoVthAP\nO2yIsiVLyxXSAMq1uYa0aZtjvqtreZd0V78/8tt1zxT7wOsD++tXiX3tXZojqIeP\nw4LF0h4Tkkx4nPCn3fm5LsoY4cY6GZ+o761eQweaUwKBgQCt9Iie5UbLw7NzjGLz\nKO1UvRXW+Qm1S27gacUkHiINw5eeKOOFGQH7onhNdAKi1Zi8ZzS9hGxrbnfI6MX3\nzvq3/SuTvhnmeXLjvphDWfvzbflGUMoEVgXb3kYBxExV9Rb/i79JwgE53UJXKzY8\n9AcMvmKTHuoaqP8wAVgwJYwlsw==\n-----END PRIVATE KEY-----\n",
+    "client_email": "studially-online-es@studially-online.iam.gserviceaccount.com",
+    "client_id": "107987593615291705507",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/studially-online-es%40studially-online.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  

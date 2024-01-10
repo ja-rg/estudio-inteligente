@@ -2,22 +2,47 @@
 const { getSession } = useAuth()
 const { user } = await getSession()
 const { data: curso, error: curso_error } = await useFetch('/api/curso', { pick: ['examenes'] })
-const { data: progreso, error: progreso_error } = await useFetch('/api/progreso', { pick: ['examenesRealizados', 'examenes'] })
+const { data: progreso, error: progreso_error, refresh } = await useFetch('/api/progreso', { pick: ['examenesRealizados', 'examenes'] })
 definePageMeta({
-    middleware: 'subscribed'
+    middleware: 'subscribed',
+    layout: 'focus',
 })
 
 const comenzar = ref(false)
 
-function comenzarExamen() {
-    setPageLayout('focus')
-    comenzar.value = true
+async function comenzarExamen() {
+    const { data, error } = await useFetch('/api/progreso/examen-actualizar', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
+    if (error) {
+        console.log(error)
+    }
+
+    if (data) {
+        comenzar.value = true
+    }
 }
 
-function terminarExamen() {
-    setPageLayout('default')
-    comenzar.value = false
+async function terminarExamen() {
+    const { data, error } = await useFetch('/api/progreso/examen-terminar', {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
+
+    if (error) {
+        console.log(error)
+    }
+
+    if (data) {
+        await refresh()
+        comenzar.value = false
+    }
 }
+
 
 </script>
 
