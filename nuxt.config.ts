@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     "nuxt-bootstrap-icons",
     "@nuxt/image",
@@ -9,6 +10,7 @@ export default defineNuxtConfig({
     '@sidebase/nuxt-pdf',
     'nuxt-vuefire',
   ],
+
   bootstrapIcons: {
     renderType: 'component'
   },
@@ -17,7 +19,6 @@ export default defineNuxtConfig({
     '~/node_modules/bootstrap/scss/bootstrap.scss',
     '~/assets/css/style.css',
   ],
-
 
   plugins: [
     { src: '~/plugins/useBootstrap.client.ts', mode: 'client' },
@@ -48,5 +49,7 @@ export default defineNuxtConfig({
       appId: "1:498493727897:web:c6af7dfcbdbb151f1e8408",
       measurementId: "G-9QHDHDQ1MQ"
     },
-  }
+  },
+
+  compatibilityDate: '2025-02-04'
 })
